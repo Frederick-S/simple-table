@@ -1,5 +1,5 @@
 import unittest
-from simple_table.simple_table import SimpleTable
+from simple_table import SimpleTable
 
 
 table_text = '''| Name | Age | City |
