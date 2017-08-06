@@ -2,8 +2,10 @@ import unittest
 from simple_table.simple_table import SimpleTable
 
 
-table_text = '''| Name | Age | City |\n| Tom  | 12  | AAA  |
-| Kate | 13  | BBB  |\n'''
+table_text = '''| Name | Age | City |
+| Tom  | 12  | AAA  |
+| Kate | 13  | BBB  |
+'''
 
 
 class TestSimpleTable(unittest.TestCase):
