@@ -1,4 +1,4 @@
-class SimpleTable():
+class SimpleTable(object):
     def __init__(self):
         self.headers = []
         self.rows = []
