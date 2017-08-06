@@ -1,2 +1,2 @@
-# simple-table
+# simple-table [![Build Status](https://travis-ci.org/Frederick-S/simple-table.svg?branch=master)](https://travis-ci.org/Frederick-S/simple-table) [![Build status](https://ci.appveyor.com/api/projects/status/pckdlfb6o7w9canp?svg=true)](https://ci.appveyor.com/project/Frederick-S/simple-table) [![codecov](https://codecov.io/gh/Frederick-S/simple-table/branch/master/graph/badge.svg)](https://codecov.io/gh/Frederick-S/simple-table)
 A very very very basic terminal table.
