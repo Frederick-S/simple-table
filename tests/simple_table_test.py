@@ -13,6 +13,6 @@ class TestSimpleTable(unittest.TestCase):
         table = SimpleTable()
         table.set_headers(['Name', 'Age', 'City'])
         table.add_row(['Tom', '12', 'AAA'])
-        table.add_row(['Kate', '13', 'BBB'])
+        table.add_rows([['Kate', '13', 'BBB']])
 
         self.assertEqual(table_text, str(table))
