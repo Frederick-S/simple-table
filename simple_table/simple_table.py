@@ -1,7 +1,7 @@
 class SimpleTable():
-    def __init__(self, headers=[], rows=[]):
-        self.headers = headers
-        self.rows = rows
+    def __init__(self):
+        self.headers = []
+        self.rows = []
 
     def set_headers(self, headers):
         self.headers = headers
@@ -26,7 +26,7 @@ class SimpleTable():
         contents = [self.headers] + self.rows
         column_widths = self.get_column_width()
 
-        for i, row in enumerate(contents):
+        for row in contents:
             for j, cell in enumerate(row):
                 pad_right_width = column_widths[j] - len(cell) + 1
                 table_text += '| ' + cell + ' ' * pad_right_width
