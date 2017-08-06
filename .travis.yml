@@ -7,10 +7,8 @@ python:
 install:
   - pip install pep8
   - pip install codecov
-  - pip install coveralls
 script:
   - pep8 .
   - coverage run --source=simple_table setup.py test
 after_success:
-  - coveralls
   - codecov
