@@ -1,3 +1,6 @@
+from simple_table.alignment import visible_width
+
+
 class SimpleTable(object):
     def __init__(self):
         self.headers = []
@@ -16,8 +19,9 @@ class SimpleTable(object):
         column_widths = [0] * len(self.headers)
 
         for i, header in enumerate(self.headers):
-            column_widths[i] = max([len(header)] +
-                                   [len(row[i]) for row in self.rows])
+            column_widths[i] = max(
+                [visible_width(header)] +
+                [visible_width(row[i]) for row in self.rows])
 
         return column_widths
 
@@ -28,7 +32,7 @@ class SimpleTable(object):
 
         for row in contents:
             for j, cell in enumerate(row):
-                pad_right_width = column_widths[j] - len(cell) + 1
+                pad_right_width = column_widths[j] - visible_width(cell) + 1
                 table_text += '| ' + cell + ' ' * pad_right_width
 
             table_text += '|\n'
