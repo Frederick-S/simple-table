@@ -31,3 +31,7 @@ class TestSimpleTable(unittest.TestCase):
         table.add_row(['计算机程序设计的艺术', '128'])
 
         self.assertEqual(table_text_non_ascii, str(table))
+
+
+if __name__ == '__main__':
+    unittest.main()
